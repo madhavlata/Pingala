@@ -6,7 +6,12 @@
     <title>IITK</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="images\iitklogo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 
+
+
+    <script src="javascript.js"></script>
     <script>/* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
         var fn3 = (function() {
             var first = true;
@@ -15,7 +20,7 @@
               first = !first;
             }
           })();
-        function openNav() {
+        function closeNav() {
           document.getElementById("mySidebar").style.width = "230px";
           document.getElementById("main").style.marginLeft = "230px";
           document.getElementById("logo").style.width = "130px";
@@ -23,22 +28,27 @@
         }
         
         /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
-        function closeNav() {
+        function openNav() {
           document.getElementById("mySidebar").style.width = "0";
           document.getElementById("main").style.marginLeft = "0";
           document.getElementById("logo").style.width = "30px";
           document.getElementById("logo").style.objectFit = "cover";
+          document.getElementById("logo").style.padding = "0px";
         }
+        /*Calender*/
+       
     </script>
 
 
   </head>
   <body>
+    <div class="top">
     <!-- navbar -->
+    <a href="https://pingala.iitk.ac.in/IITK-0/logincheck" class="logo" >
+      <img src="images\pingala_logo.png" id="logo" style="height: 50px; width: 130px; margin-left: -4px; objectFit: fill;"/>
+    </a>
     <nav class="navbar">
-      <a href="https://pingala.iitk.ac.in/IITK-0/logincheck" class="logo" >
-        <img src="images\pingala_logo.png" id="logo" style="height: 50px; width: 30px; margin-left: -4px; objectFit: fill;"/>
-      </a>
+      
 
       <!-- <a href="" class="sidebar-toggle" data-toggle="offcanvas" role="button">
                 <span class="sr-only">Toggle Navigation</span>
@@ -66,7 +76,7 @@
       </div>
 
       <!-- lknkj -->
-      <div class="navbar-left">
+      <div class="navbarleft">
         <a
           href="#"
           data-toggle="dropdown"
@@ -90,6 +100,7 @@
         </a>
       </div>
     </nav>
+  </div>
 
     <section
       class="content-header"
@@ -154,7 +165,90 @@
     </div>
 
 
+    <!-- Calender -->
 
+    <div class="calenderbox">
+        <h3 style="display:inline; padding:0px 7px;"> <i style="font-size:24px " class="fa">&#xf073;</i> Calender</h3>
+        <p  class="minus" ><i style="font: size 12px;" class="cross">&#10006;</i><i style="font-size:24px">&minus;</i></p>
+        <div class="calender" >
+          <table id="calender">
+              <tr>
+              <th colspan="7">JULY 2023</th>
+              </tr>
+              
+              <tr >
+              <th class="day">Sun</th>
+              <th class="day">Mon</th>
+              <th class="day">Tue</th>
+              <th class="day">Wed</th>
+              <th class="day">Thu</th>
+              <th class="day">Fri</th>
+              <th class="day">Sat</th>
+              </tr>
+
+              <tr>
+                <td class="light">25</td>
+                <td class="light">26</td>
+                <td class="light">27</td>
+                <td class="light">28</td>
+                <td class="light">29</td>
+                <td class="light">30</td>
+                <td>1</td>
+                </tr>
+              
+              <tr>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+              <td>6</td>
+              <td>7</td>
+              <td>8</td>
+              </tr>
+              
+              <tr>
+              <td>9</td>
+              <td>10</td>
+              <td>11</td>
+              <td>12</td>
+              <td>13</td>
+              <td>14</td>
+              <td>15</td>
+              </tr>
+              
+              <tr>
+              <td>16</td>
+              <td>17</td>
+              <td>18</td>
+              <td>19</td>
+              <td>20</td>
+              <td>21</td>
+              <td>22</td>
+              </tr>
+              
+              <tr>
+              <td>23</td>
+              <td>24</td>
+              <td>25</td>
+              <td class="highlight">26</td>
+              <td>27</td>
+              <td>28</td>
+              <td>29</td>
+              </tr>
+              
+              <tr>
+              <td>30</td>
+              <td>31</td>
+              <td class="light">1</td>
+              <td class="light">2</td>
+              <td class="light">3</td>
+              <td class="light">4</td>
+              <td class="light">5</td>
+              </tr>
+              
+          </table>
+        </div>
+    </div>
 
 
 
